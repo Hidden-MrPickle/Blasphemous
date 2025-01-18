@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "badboys";
+  src: url("./fonts/Bad Boys.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "badboys";
+  letter-spacing: 0;
+}
+#section {
+  background: url("./img/bg-blasphemous.webp");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  object-position: center;
+  height: 100vh;
+}
+#navigationBar {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: start;
+}
+.itemBar {
+  text-decoration: none;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  font-weight: 650;
+  color: rgb(5, 5, 5);
+}
+.itemBar:hover {
+  color: darkslategray;
+  transition: ease-in-out;
+  transition-duration: 300ms;
+}
+.logo {
+  margin-top: 3rem;
+}
+.penitent {
+  position: absolute;
+  z-index: 1;
+  margin: 0 auto;
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+  left: 5%;
+  bottom: 0;
+  margin-left: 30%;
+}
+.penitent img {
+  overflow: hidden;
+  width: 100vh;
+}
+#glass {
+  position: absolute;
+  z-index: 3;
+  height: 15rem;
+  width: 80%;
+  bottom: 0;
+  margin-left: 10%;
+  background-color: transparent;
+  background-image: linear-gradient(
+    120deg,
+    rgba(224, 172, 93, 0.3),
+    rgba(161, 38, 0, 0.3)
+  );
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  text-align: center;
+}
+.paragraph {
+  padding: 3.5rem;
+  color: rgb(22, 16, 16);
+  font-size: 2rem;
+}
